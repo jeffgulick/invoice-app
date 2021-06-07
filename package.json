@@ -1,8 +1,18 @@
 {
   "name": "invoice-app",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "server/server.js",
   "author": "Jeff Gulick",
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "dev:server": "nodemon ./server/server.js",
+    "dev:front": "cd client && npm start",
+    "dev": "concurrently \"nodemon ./server/server.js\" \"cd client && npm start\""
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }
