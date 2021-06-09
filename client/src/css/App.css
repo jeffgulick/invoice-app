@@ -465,3 +465,6 @@ form > *:last-child {
   font-size: 9rem;
 }
 
+.accordion {
+  height: 520px;
+}
